@@ -1,5 +1,6 @@
 import React from 'react';
 import './textInput.css';
+import shark from './shark.png';
 import Particles from 'react-tsparticles';
 
 class TextInput extends React.Component {
@@ -45,7 +46,7 @@ class TextInput extends React.Component {
                             mode: "push",
                         },
                         onHover: {
-                            enable: true,
+                            enable: false,
                             mode: "repulse",
                         },
                         resize: true,
@@ -99,10 +100,18 @@ class TextInput extends React.Component {
                         value: 0.5,
                         },
                         shape: {
-                        type: "circle",
+                            options: {
+                                image: {
+                                    height: 100,
+                                    replace_color: false,
+                                    src: './shark.png',
+                                    width: 100,
+                                }
+                            },
+                        type: "image",
                         },
                         size: {
-                        random: true,
+                        random: false,
                         value: 5,
                         },
                     },
