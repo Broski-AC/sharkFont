@@ -34,4 +34,5 @@
     width: 20%;
     height: 10vh;
     cursor: url('./tooth.png'), default;
+    -webkit-appearance: none;
 }
