@@ -1,0 +1,7 @@
+.titleBox {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    background-color: cadetblue;
+}

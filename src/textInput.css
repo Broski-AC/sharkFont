@@ -1,0 +1,21 @@
+.formInput {
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.sharkLabel {
+    margin: 2vh;
+}
+
+.textArea {
+    height: 20vh;
+    cursor: url('./tooth.png'), default;
+}
