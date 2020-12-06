@@ -7,6 +7,7 @@
 .form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     width: 100%;
 }
@@ -17,5 +18,13 @@
 
 .textArea {
     height: 20vh;
+    width: 80vw;
+    cursor: url('./tooth.png'), default;
+}
+
+.submit {
+    margin: 2vh;
+    width: 20%;
+    height: 10vh;
     cursor: url('./tooth.png'), default;
 }
