@@ -2,6 +2,8 @@ import React from 'react';
 import './textInput.css';
 import shark from './shark.png';
 import Particles from 'react-tsparticles';
+import ParticlesBg from 'particles-bg'
+
 
 class TextInput extends React.Component {
 
@@ -26,98 +28,26 @@ class TextInput extends React.Component {
     }
 
     render(){
+        let config = {
+            num: [1, 2],
+            rps: 0.1,
+            radius: [5, 40],
+            life: [1.5, 3],
+            v: [1, 2],
+            tha: [-40, 40],
+            alpha: [1, 0],
+            scale: [.1, 0.4],
+            position: "all",
+            color: ["random", "#ff0000"],
+            cross: "bround",
+            // emitter: "follow",
+            random: 15,
+            body: "https://i.imgur.com/j0snvy3.png"
+          };
         return (
         <div>
-            <div className="particles">
-                <Particles
-                    id="tsparticles"
-                    options={{
-                    background: {
-                        color: {
-                        value: '#5f9ea0',
-                        },
-                    },
-                    fpsLimit: 60,
-                    interactivity: {
-                        detectsOn: "canvas",
-                        events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
-                        onHover: {
-                            enable: false,
-                            mode: "repulse",
-                        },
-                        resize: true,
-                        },
-                        modes: {
-                        bubble: {
-                            distance: 400,
-                            duration: 2,
-                            opacity: 0.8,
-                            size: 40,
-                        },
-                        push: {
-                            quantity: 4,
-                        },
-                        repulse: {
-                            distance: 200,
-                            duration: 0.4,
-                        },
-                        },
-                    },
-                    particles: {
-                        color: {
-                        value: "#ffffff",
-                        },
-                        links: {
-                        color: "#ffffff",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
-                        },
-                        collisions: {
-                        enable: true,
-                        },
-                        move: {
-                        direction: "none",
-                        enable: true,
-                        outMode: "bounce",
-                        random: false,
-                        speed: 6,
-                        straight: false,
-                        },
-                        number: {
-                        density: {
-                            enable: true,
-                            value_area: 800,
-                        },
-                        value: 80,
-                        },
-                        opacity: {
-                        value: 0.5,
-                        },
-                        shape: {
-                            options: {
-                                image: {
-                                    height: 100,
-                                    replace_color: false,
-                                    src: './shark.png',
-                                    width: 100,
-                                }
-                            },
-                        type: "image",
-                        },
-                        size: {
-                        random: false,
-                        value: 5,
-                        },
-                    },
-                    detectRetina: true,
-                    }}
-                />
+        <div className="particles">
+            <ParticlesBg type="custom" config={config} bg={true} />
             </div>
             <div className='formInput'>
                 <form className='form' onSubmit={this.handleSubmit}>
