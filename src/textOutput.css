@@ -1,4 +1,13 @@
+@font-face {
+    font-family: sharkFont;
+    src: url('./testFont.ttf');
+}
+
 .textOutput {
     display: flex;
     justify-content: center;
+}
+
+.sharkFont {
+    font-family: sharkFont;
 }

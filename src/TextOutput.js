@@ -5,7 +5,7 @@ function TextOutput(props){
 
     return (
         <div className="textOutput"> 
-            <h1>{props.translationText}</h1>
+            <h1 className="sharkFont">{props.translationText}</h1>
         </div>
     )
 }
